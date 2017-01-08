@@ -1,7 +1,7 @@
-# Dockerfile to create Rosa linux base images
-# Create base image with mkimage-urpmi.sh script
+# Dockerfile to create Alt linux base images
+# Create base image with mkimage-apt.sh script
 #
 
 FROM scratch
 MAINTAINER "Anton Goroshkin" <neobht@sibsau.ru>
-ADD https://github.com/sibsau/docker-rosa/raw/master/rootfs.tar.xz /
+ADD https://github.com/sibsau/docker-alt/raw/master/rootfs.tar.xz /
