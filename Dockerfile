@@ -4,4 +4,7 @@
 
 FROM scratch
 MAINTAINER "Anton Goroshkin" <neobht@sibsau.ru>
-ADD https://github.com/sibsau/docker-alt/raw/master/rootfs.tar.xz /
+ENV TARROOTFS https://github.com/sibsau/docker-alt/raw/master/rootfs.tar.xz
+#ADD ${TARROOTFS} /
+RUN curl -fsSL "${TARROOTFS}" \
+	| tar -xzC /
